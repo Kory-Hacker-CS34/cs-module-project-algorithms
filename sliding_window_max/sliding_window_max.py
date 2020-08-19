@@ -4,8 +4,29 @@ Returns: a List of integers
 '''
 def sliding_window_max(nums, k):
     # Your code here
+    from collections import deque
+    current = 0
+    # print(nums)
+    # print(nums[current])
+    start = 0
+    end = k
+    window = []
+    answerArr = []
 
-    pass
+    # print(window)
+
+    for i in nums:
+        window = nums[start:end]
+        answerArr.append(max(window))
+        print(window)
+        start += 1
+        end += 1
+        if len(window) < k:
+            answerArr.pop(-1)
+            return answerArr
+    # return answerArr
+        
+    # pass
 
 
 if __name__ == '__main__':

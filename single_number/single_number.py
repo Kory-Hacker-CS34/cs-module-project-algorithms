@@ -12,7 +12,7 @@ def single_number(arr):
         elif arr.count(arr[current]) == 1:
             return arr[current]
 
-    pass
+    # pass
 
 
 if __name__ == '__main__':
