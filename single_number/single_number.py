@@ -4,6 +4,13 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    current = 0
+
+    for i in arr:
+        if arr.count(arr[current]) >= 2:
+            current += 1
+        elif arr.count(arr[current]) == 1:
+            return arr[current]
 
     pass
 
