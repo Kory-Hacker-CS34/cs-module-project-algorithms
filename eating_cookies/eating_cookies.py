@@ -4,7 +4,15 @@ Returns: an integer
 '''
 def eating_cookies(n):
     # Your code here
+    count = 0
 
+    if n == 0:
+        return count
+    while n > 0:
+        if (n - 1) > 0:
+            count += 1
+        
+    
     pass
 
 if __name__ == "__main__":
